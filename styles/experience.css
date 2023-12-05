@@ -1,0 +1,139 @@
+.experiences{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+   
+
+}
+
+.experiences-grid{
+    display: grid;
+    grid-template-columns: 2rem,
+     2rem;
+    gap: 50px 50px;
+    padding: 70px;
+    justify-content: center;
+    max-width: 980px;
+    margin: 0 auto;
+
+}
+
+.img-1{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 10px 2px 2px #fff;
+}
+
+.experiences-body-1{
+    background-color: var(--primary-color);
+    color: var(--text-color-inverse);
+    background: rgb(10,10,10);
+background: linear-gradient(162deg, rgba(10,10,10,1) 27%, rgba(92,193,214,1) 79%);
+    
+
+}
+
+.experiencies-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 25px;
+    font-style: italic;
+
+}
+.experience{
+    padding: 25px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.experience-description{
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+@media (min-width: 950px){
+    .experiences{
+        display: wrap;
+        flex-direction: column;
+       
+    
+    }
+    
+    .experiences-body{
+        background-color: var(--theme-color);
+        color: var(--text-color)
+    
+    }
+    
+     .experience{
+        padding: 0;
+       
+    }
+    .img-1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2rem;
+        box-shadow: 10px 2px 2px black;
+
+       
+    
+    
+    }
+    
+    .experience-position{
+        font-weight: 500;
+        font-size: 18px;
+        margin-top: 20px;
+    
+    }
+    .experience-description{
+        font-weight: 400;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 5px;
+}
+.experiences-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px 70px;
+    padding: 70px;
+    justify-content: center;
+    max-width: 980px;
+    margin: 0 auto;
+    
+
+}
+.line{
+    background-color: var(--text-color-inverse);
+    position: relative;
+}
+.line::before,
+.line::after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: var(--text-color-inverse);
+    border-radius: 50%;
+
+    position: absolute;
+    top: -20px;
+    left:-9px;
+
+}
+
+
+}
